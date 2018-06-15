@@ -1,0 +1,45 @@
+{
+    "ret": true,
+    "errMsg": "",
+    "data": [{
+      "id": "1",
+      "title": "金币商城",
+      "desc": "0元好物在这里",
+      "imgUrl": "/static/images/find/red-bag.jpeg"       
+    }, {
+      "id": "2",
+      "title": "免费流量",
+      "desc": "0元好物在这里",
+      "imgUrl": "/static/images/find/free.jpeg"       
+    }, {
+      "id": "3",
+      "title": "必吃爆料",
+      "desc": "0元好物在这里",
+      "imgUrl": "/static/images/find/must-eat.jpeg"       
+    }, {
+      "id": "4",
+      "title": "推荐有奖",
+      "desc": "0元好物在这里",
+      "imgUrl": "/static/images/find/chips.jpeg"       
+    }, {
+      "id": "5",
+      "title": "百元红包",
+      "desc": "0元好物在这里",
+      "imgUrl": "/static/images/find/hundred.jpeg"       
+    }, {
+      "id": "6",
+      "title": "周边优惠",
+      "desc": "0元好物在这里",
+      "imgUrl": "/static/images/find/around.jpeg/"       
+    }],
+    "imgs": [{
+      "id": "8",
+      "imgUrl": "/static/images/home/1.jpg"
+    }, {
+      "id": "9",
+      "imgUrl": "/static/images/home/2.jpg"
+    }, {
+      "id": "90",
+      "imgUrl": "/static/images/home/3.jpg"
+    }]
+}
