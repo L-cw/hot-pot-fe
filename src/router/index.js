@@ -1,14 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Index from 'pages/home/index'
-import Find from 'pages/find/index'
-import Search from 'pages/search/index'
-import Order from 'pages/order/index'
-import Mine from 'pages/mine/index'
-import Login from 'pages/loginRegister/index'
-import Shop from 'pages/shop/index'
-import Change from 'pages/loginRegister/changePwd'
-import CreateOrder from 'pages/createOrder/index'
 
 Vue.use(Router)
 let y = null
@@ -17,45 +8,45 @@ const router = new Router({
     {
       path: '/',
       name: 'index',
-      component: Index
+      component: resolve => require(['@/pages/home/index.vue'], resolve)
     }, {
       path: '/find',
       name: 'find',
-      component: Find
+      component: resolve => require(['@/pages/find/index.vue'], resolve)
     }, {
       path: '/search',
       name: 'search',
-      component: Search
+      component: resolve => require(['@/pages/search/index.vue'], resolve)
     }, {
       path: '/order',
       name: 'order',
-      component: Order
+      component: resolve => require(['@/pages/order/index.vue'], resolve)
     }, {
       path: '/mine',
       name: 'mine',
-      component: Mine
+      component: resolve => require(['@/pages/mine/index.vue'], resolve)
     },
     {
       path: '/login',
       name: 'login',
-      component: Login
+      component: resolve => require(['@/pages/loginRegister/index.vue'], resolve)
     },
     {
       path: '/shop/:shopId',
       name: 'shop',
-      component: Shop,
+      component: resolve => require(['@/pages/shop/index.vue'], resolve),
       props: true
     },
     {
       path: '/change/:tel',
       name: 'change',
-      component: Change,
+      component: resolve => require(['@/pages/loginRegister/changePwd.vue'], resolve),
       props: true
     },
     {
       path: '/corder',
       name: 'corder',
-      component: CreateOrder
+      component: resolve => require(['@/pages/createOrder/index.vue'], resolve)
     }
   ]
 })

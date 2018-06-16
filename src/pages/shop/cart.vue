@@ -26,6 +26,7 @@
       handleCartChange (e) {
         this.count = 0
         this.list = e
+        console.log(JSON.stringify(e))
         if (this.list.length) {
           this.active = true
         } else {
@@ -38,6 +39,7 @@
         for (let i = 0; i < this.list.length; i++) {
           this.countPrice += this.list[i].price * this.list[i].count
         }
+        this.$store.commit('SAVE_ORDER_INFO', this.list)
       },
 
       handleCountClick () {

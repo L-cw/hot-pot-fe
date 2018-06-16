@@ -4,6 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import * as filters from './filters'
 import FastClick from 'fastclick'
+import store from './store'
 import router from './router'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import VueLazyLoad from 'vue-lazyload'
@@ -32,6 +33,7 @@ Object.keys(filters).forEach(key => {
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  store,
   router,
   template: '<App/>',
   components: { App }

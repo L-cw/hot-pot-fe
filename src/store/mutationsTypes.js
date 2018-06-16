@@ -1,0 +1,2 @@
+export const SAVE_ORDER_INFO = 'SAVE_ORDER_INFO'
+export const GET_ORDER_INFO = 'GET_ORDER_INFO'
